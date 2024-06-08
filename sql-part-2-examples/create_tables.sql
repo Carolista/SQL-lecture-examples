@@ -32,8 +32,10 @@ CREATE TABLE artwork (
     artist_id INT,
     style_id INT,
     exhibit_id INT,
-    on_display BOOLEAN
-	-- Add foreign keys here!
+    on_display BOOLEAN,
+	FOREIGN KEY (artist_id) REFERENCES artist(id),
+    FOREIGN KEY (style_id) REFERENCES style(id),
+    FOREIGN KEY (exhibit_id) REFERENCES exhibit(id)
 );
 
 -- TODO: Run query to create artwork_details table
