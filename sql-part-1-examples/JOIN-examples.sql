@@ -24,12 +24,12 @@ SELECT DISTINCT artist
 FROM artwork
 INNER JOIN artist ON artwork.artist = artist.full_name;
 
--- List all artwork titles and artists and add nationalities from artist table using a left inner join
+-- List all artwork titles and artists and add nationalities from artist table using a left outer join
 SELECT DISTINCT artwork.title, artwork.artist, artist.nationality
 FROM artwork
 LEFT JOIN artist ON artwork.artist = artist.full_name;
 
--- List all artwork titles and styles and add full_name and nationality from artist table using a right inner join
+-- List all artwork titles and styles and add full_name and nationality from artist table using a right outer join
 SELECT DISTINCT artwork.title, artwork.style, artist.full_name, artist.nationality
 FROM artwork
 RIGHT JOIN artist ON artwork.artist = artist.full_name;
