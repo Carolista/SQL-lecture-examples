@@ -11,10 +11,10 @@
 -- Run the previous query but eliminate duplicates 
 
 
--- List all artwork titles and artists and add nationalities from artist table using a left inner join
+-- List all artwork titles and artists and add nationalities from artist table using a left outer join
 
 
--- List all artwork titles and styles and add full_name and nationality from artist table using a right inner join
+-- List all artwork titles and styles and add full_name and nationality from artist table using a right outer join
 
 
 -- List all records using a full outer join of both tables
